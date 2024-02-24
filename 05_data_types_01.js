@@ -26,4 +26,18 @@ alert(3 * NaN); //NaN
 
 alert( "not a number" / 2 - 1); //NaN
 
-alert ( NaN ** 0 ); // 1
+alert("message");
+
+alert(9007199254740991 + 1);
+
+alert("message");
+alert(9007199254740991 + 2);
+
+alert("message");
+alert(9007199254740991 + 3);
+
+alert("message");
+
+const bigInt = 1234567890123456789012345678901234567890n;
+alert(bigInt);
+
