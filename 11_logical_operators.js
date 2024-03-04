@@ -80,4 +80,21 @@ alert( 1 && 2 && null && 3 ); // null
 alert( undefined && 1 && null ); // undefined
 alert( 1 && 2 && 3 ); // 3
 
+let x = 1;
+
+(x > 0) && alert('Greater than Zero!');
+
+if ( x > 0 ) {
+	alert('Greater than Zero!');
+}
+
+
+alert(!true); // false
+alert(!0); // true
+
+alert(!!'non-empty string'); // true
+alert(!!null); // false
+
+alert(Boolean('non-empty string')); // true
+alert(Boolean(null)); // false
 
