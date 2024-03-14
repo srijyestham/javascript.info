@@ -18,6 +18,7 @@ function msgValue() {
 showMessages(from); // hello*, This is default value function
 showMessages(from, "Ann!"); // hello*, Ann!
 msgValue();
+alert(from); // Hello
 
 
 alert(from); // Hello
