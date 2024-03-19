@@ -38,3 +38,22 @@ function showMovie(age) {
 }
 
 showMovie(age);
+
+alert('before undefined function');
+
+/*
+function doNothig() {}
+alert(doNothing() === undefined); // true
+
+function doNothing2() { return; }
+alert(doNothing2() === undefined); // true
+*/
+
+function sumNumbers() {
+	
+	return (
+		1 + 2 + 3+ 4
+	)
+}
+
+alert(sumNumbers()); // 10
