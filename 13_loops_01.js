@@ -52,16 +52,3 @@ do {
 	
 } while (number <= 100 && number);
 
-
-
-alert("Answer 6 Prime Numbers");
-
-let numberCheck = prompt("Enter a number", "");
-
-for (let counter = 2; counter < numberCheck; counter++) {
-	
-	if (numberCheck % counter === 0) break;
-	
-	alert(counter);
-}
-
