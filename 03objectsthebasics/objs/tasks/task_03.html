@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+	<body>
+		<p>Sum object properties</p>
+		<script>
+			'use strict';
+			
+			let salaries = {
+				john: 100,
+				Ann: 160,
+				Pete: 130
+			}
+			
+			let totalSum = 0;
+			function sumProperties(obj) {
+				
+				for (let prop in obj) {
+					totalSum += obj[prop];
+				}
+				return totalSum;
+			}
+			
+			alert(sumProperties(salaries));;
+		</script>
+	</body>
+</HTML>

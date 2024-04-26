@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+	<body>
+		<p>Task 02</p>
+		<script src = "https://en.js.cx/test/libs.js"></script>
+		<script src = "task_02_tests.js"></script>
+		<script>
+			'use strict';
+			
+			let schedule = {}; // obj declared
+			
+			function isEmpty(obj) {
+				
+				for (let key in obj) {
+					return false;
+				}
+				return true;
+			}
+			
+			alert(isEmpty(schedule));
+			
+			shedule["8:31"] = "get up";
+			
+			alert(isEmpty(schedule));
+			
+		</script> 
+	</body>
+</HTML>
