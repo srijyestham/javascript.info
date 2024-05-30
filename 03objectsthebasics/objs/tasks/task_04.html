@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+	<body>
+		<p>Task 4 - Mutltiply numeric property values by 2</p>
+		<script src = "https://en.js.cx/test/libs.js"></script>
+		<script src = "task_04_tests.js"></script>
+		<script>
+			
+			function multiplyNumeric(obj) {
+				for (let prop in obj) {
+					if (typeof(obj[prop]) == "number") {
+						obj[prop] = 2 * obj[prop];
+					}
+				}
+			}
+			
+		</script>
+	</body>
+<HTML>
