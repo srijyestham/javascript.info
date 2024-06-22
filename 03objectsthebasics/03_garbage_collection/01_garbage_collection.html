@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+	<body>
+		<p>Garbage Collection</p>
+		<script>
+			'use strict';
+			
+			// interlinked objects
+			function marry(man, woman) {
+				woman.husband = man;
+				man.wife = woman;
+				
+				return {
+					father: man,
+					mother: woman
+				}
+			}
+			
+			let family = marry({
+				name: "John"
+			}, {
+				name: "Ann"
+			});
+			
+			//alert(family.father.name); // John
+			//alert(family.mother.name); // Ann
+			
+			delete family.father;
+			delete family.mother.husband;
+			
+			// reachable object
+			alert(family.mother.name); // Ann
+			
+			family = null;
+			
+			// unreachable island
+			alert(family.father.name); // no object
+			
+			
+		</script>
+	</body>
+<HTML>
