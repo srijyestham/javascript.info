@@ -14,6 +14,7 @@ user.sayHi = function () { // arrow fn cant be used
 
 user.sayHi(); // Hello!
 
+
 // using predeclared function as a method
 
 function greet() {
@@ -26,3 +27,39 @@ user2.greeter = greet; // reference copying of fn body
 
 user2.greeter(); // Good Morning
 	
+
+
+// function as method 2
+
+let user3 = {};
+
+function sayHi2() {
+	alert("Hello!X2");
+}
+
+user3.sayHi2 = sayHi2;
+
+user3.sayHi2(); // Hello!X2
+
+
+
+// Method Shorthand
+
+let user4 = {
+	sayHi: function() {
+		alert("Hello");
+	}
+};
+
+user4.sayHi(); // Hello
+
+let user5 = {
+	sayHi() {              // function keyword not to be used
+		alert("Hello!X3");
+	}
+};
+
+user5.sayHi(); // Hello!X3
+
+
+
