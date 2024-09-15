@@ -6,8 +6,8 @@
 let calculator = {
 	
 	read() {
-		this.a = +prompt('a?', 0);
-		this.b = +prompt('b?', 0);
+		this.a = +prompt('a?: ', 0);
+		this.b = +prompt('b?: ', 0);
 	},
 	
 	sum() {
@@ -20,6 +20,26 @@ let calculator = {
 };
 
 calculator.read();
+alert("The Sum is " + calculator.sum());
+alert("The Multiplication result is " + calculator.mul());
 
-alert(calculator.sum());
-alert(calculator.mul());
+
+// task 3
+
+let ladder = {
+	
+	step: 0,
+	
+	up() {
+		this.step++;
+	},
+	
+	down() {
+		this.step--;
+	},
+	
+	showStep: function() {
+		alert(this.step);
+	}
+};
+	};
