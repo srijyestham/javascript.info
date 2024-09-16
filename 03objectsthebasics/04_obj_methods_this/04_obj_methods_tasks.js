@@ -32,14 +32,24 @@ let ladder = {
 	
 	up() {
 		this.step++;
+		return this;
 	},
 	
 	down() {
 		this.step--;
+		return this;
 	},
 	
 	showStep: function() {
 		alert(this.step);
+		return this;
 	}
 };
-	};
+
+ladder
+	.up() // +1
+	.up() // +1
+	.down() // -1
+	.showStep() // 1
+	.down() // -1
+	.showStep(); // 0
