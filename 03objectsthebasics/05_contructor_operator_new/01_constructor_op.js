@@ -74,6 +74,7 @@ function User3() {
 //alert(new User3.name); // does not work this way
 alert(new User3().name); // test
 
+// omitting parentheses
 let user3 = new User3;
 alert(user3.name); // test
 let user4 = new User3(); // above work same
