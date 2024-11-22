@@ -27,3 +27,25 @@ alert(id4.toString()); // Symbol(id)
 // to show description only of a symbol
 alert(id4.description); // id
 
+// hidden properties
+
+let user = { // belongs to another code
+	name: "John"
+};
+
+let id5 = Symbol("id");
+
+user[id5] = 1;
+
+// we can access the data using the symbol as the key
+alert(user[id]); 
+
+
+// another party can also add its own identifiers
+
+//let id6 = symbol("id");
+
+user[id5] = "Their id value"; // this works as all symbols
+							  // are always different
+
+alert(user[id5]); 
