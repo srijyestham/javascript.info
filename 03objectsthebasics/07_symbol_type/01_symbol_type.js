@@ -49,3 +49,24 @@ user[id5] = "Their id value"; // this works as all symbols
 							  // are always different
 
 alert(user[id5]); 
+
+
+// string type can't be used same way
+
+let user1 = {
+	name: "John"
+};
+
+user.id = "Our id value"; // first use works
+ 
+user.id = "Their id value"; // second use overwrites
+
+// using symbols in an object literal
+// square bracket around it required
+
+let id = Symbol("id");
+
+let user2 = {
+	name: "John",
+	[id]: 123 // not "id": 123
+};
